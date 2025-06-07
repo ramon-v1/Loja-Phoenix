@@ -1,17 +1,38 @@
 {
+    "name": "escapework/frete",
+    "description": "Library pra cálculo de frete",
+    "type": "library",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Luís Dalmolin",
+            "email": "luis.nh@gmail.com"
+        },
+        {
+            "name": "Eduardo Henrique Kasper",
+            "email": "ehkasper@gmail.com"
+        }
+    ],
+
     "require": {
-        "smarty/smarty": "~3.1",
-        "phpmailer/phpmailer": "~5.2"
+        "php": ">=5.5.0",
+        "guzzlehttp/guzzle": "~5.0|~6.0|~7.0"
     },
 
-    "config": {
-    	"vendor-dir" : "lib/"
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
     },
 
     "autoload": {
-    	"classmap" : ["model/"]
+        "psr-4": {
+            "EscapeWork\\Frete\\": "src"
+        }
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.5-dev"
+        }
     }
-
-    
-
 }
